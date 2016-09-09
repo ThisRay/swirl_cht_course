@@ -1,0 +1,32 @@
+- Class: meta
+  Course: swirl 中文課程
+  Lesson: 第一節課
+  Author: ray test
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 101.3.1.7
+
+- Class: text
+  Output: "中文訊息測試, test, 請按 Enter"
+
+- Class: text
+  Output: "中文訊息測試2, 許功蓋測試, \n 換行測試, \n test"
+
+- Class: text
+  Output: |
+    中文訊息測試3
+    ,  換行測試
+    ,  換行測試
+
+- Class: cmd_question
+  Output: 請輸入 2 + 2 的運算結果 （數字）
+  CorrectAnswer: 4
+  AnswerTests: omnitest(correctExpr='4', correctVal=4)
+  Hint: 提示, 2 + 2 = 4
+
+- Class: mult_question
+  Output: 請選擇 2 x 2 的運算結果
+  AnswerChoices: 一;二;三;四
+  CorrectAnswer: '四'
+  AnswerTests: omnitest(correctVal= '四')
+  Hint: 提示, 2 x 2 = 4
