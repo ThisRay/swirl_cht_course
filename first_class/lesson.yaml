@@ -30,3 +30,8 @@
   CorrectAnswer: '四'
   AnswerTests: omnitest(correctVal= '四')
   Hint: 提示, 2 x 2 = 4
+
+- Class: text
+  Output: |-
+    中文訊息測試, test, 請按 Enter
+
