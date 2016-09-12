@@ -24,4 +24,5 @@ csvfile_path <- file.path(.get_course_path(),
                       'first_class',
                       'hcc_utf8.csv')
 
-test_list <- list("跚愧稞鈾"="璞餐縷擺","台灣資料科學年會"="中央研究院人文社會科學館")
+
+test_list <- list("台灣資料科學年會"="中央研究院人文社會科學館","跚愧稞鈾"="璞餐縷擺")
