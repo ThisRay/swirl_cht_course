@@ -7,31 +7,38 @@
   Version: 101.3.1.7
 
 - Class: text
-  Output: "中文訊息測試, test, 請按 Enter"
+  Output: "中文訊息測試, 許功蓋測試, test, 請按 Enter"
 
-- Class: text
-  Output: "中文訊息測試2, 許功蓋測試, \n 換行測試, \n test"
-
-- Class: text
-  Output: |
-    中文訊息測試3
-    ,  換行測試
-    ,  換行測試
+- Class: text_question
+  Output: 請輸入中文 ` 許 `
+  CorrectAnswer: 許
+  AnswerTests: omnitest(correctVal='許')
+  Hint: hint
 
 - Class: cmd_question
-  Output: 請輸入 2 + 2 的運算結果 （數字）
-  CorrectAnswer: 4
-  AnswerTests: omnitest(correctExpr='4', correctVal=4)
-  Hint: 提示, 2 + 2 = 4
+  Output: 請輸入` c('孀','髏','躡','黠') `, 測試中文在 vector 中的情況
+  CorrectAnswer: c('孀','髏','躡','黠')
+  AnswerTests: omnitest('c(\'孀\',\'髏\',\'躡\',\'黠\')')
+  Hint: 輸入`c('孀','髏','躡','黠')`
 
-- Class: mult_question
-  Output: 請選擇 2 x 2 的運算結果
-  AnswerChoices: 一;二;三;四
-  CorrectAnswer: '四'
-  AnswerTests: omnitest(correctVal= '四')
-  Hint: 提示, 2 x 2 = 4
+- Class: cmd_question
+  Output: 請輸入` list('功','蓋'='穀','閱'=123) `, 測試中文在 list 中的情況
+  CorrectAnswer: list('功','蓋'='穀','閱'=123)
+  AnswerTests: omnitest('list(\'功\',\'蓋\'=\'穀\',\'閱\'=123)')
+  Hint: 輸入`list('功','蓋'='穀','閱'=123)`
 
+- Class: cmd_question
+  Output: 請輸入` data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾')) `, 測試中文在 data.frame 中的情況。
+  CorrectAnswer: data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾'))
+  AnswerTests: omnitest('data.frame(\'珮\'=c(\'豹\',\'涂\',\'罡\'), \'跚\'=c(\'愧\',\'稞\',\'鈾\'))')
+  Hint: 輸入`data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾'))`
+
+- Class: cmd_question
+  Output: 請輸入` read.csv(file=csvfile_path,fileEncoding='UTF-8') `, 測試中文 csv 讀取的情況
+  CorrectAnswer: read.csv(file=csvfile_path,fileEncoding='UTF-8')
+  AnswerTests: omnitest('read.csv(file=csvfile_path,fileEncoding=\'UTF-8\')')
+  Hint: 輸入`read.csv(file=csvfile_path,fileEncoding='UTF-8')`
+  
 - Class: text
-  Output: |-
-    中文訊息測試, test, 請按 Enter
-
+  Output: |
+    中文訊息測試結束
