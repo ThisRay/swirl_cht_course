@@ -22,10 +22,16 @@
   Hint: 輸入`c('孀','髏','躡','黠')`
 
 - Class: cmd_question
-  Output: 請輸入` list('功','蓋'='穀','閱'=123) `, 測試中文在 list 中的情況
-  CorrectAnswer: list('功','蓋'='穀','閱'=123)
-  AnswerTests: omnitest('list(\'功\',\'蓋\'=\'穀\',\'閱\'=123)')
-  Hint: 輸入`list('功','蓋'='穀','閱'=123)`
+  Output: 請輸入` list('功','蓋'='穀稞','閱'=123) `, 測試中文在 list 中的情況
+  CorrectAnswer: list('功','蓋'='穀稞','閱'=123)
+  AnswerTests: omnitest('list(\'功\',\'蓋\'=\'穀稞\',\'閱\'=123)')
+  Hint: 輸入`list('功','蓋'='穀稞','閱'=123)`
+
+- Class: cmd_question
+  Output: 請輸入` test_list `, 測試中文在內建變數中的情況
+  CorrectAnswer: test_list
+  AnswerTests: omnitest('test_list')
+  Hint: 輸入`test_list`
 
 - Class: cmd_question
   Output: 請輸入` data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾')) `, 測試中文在 data.frame 中的情況。
@@ -38,7 +44,17 @@
   CorrectAnswer: read.csv(file=csvfile_path,fileEncoding='UTF-8')
   AnswerTests: omnitest('read.csv(file=csvfile_path,fileEncoding=\'UTF-8\')')
   Hint: 輸入`read.csv(file=csvfile_path,fileEncoding='UTF-8')`
+
+- Class: text
+  Output: |
+    接下來是 script 測試
+
+- Class: script
+  Output: 在 script 中測試中文
+  AnswerTests: test_HW_test()
+  Hint: hint
+  Script: test_HW.R
   
 - Class: text
   Output: |
-    中文訊息測試結束
+    中文訊息測試結束, 按 Enter 即可離開

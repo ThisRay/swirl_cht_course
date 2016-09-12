@@ -9,8 +9,6 @@ library(magrittr)
 #        "/hcc_utf8.csv",
 #        envir = globalenv())
 
-
-
 # For compatibility with 2.2.21
 .get_course_path <- function(){
   tryCatch(swirl:::swirl_courses_dir(),
@@ -25,3 +23,5 @@ csvfile_path <- file.path(.get_course_path(),
                       'swirl_cht_course',
                       'first_class',
                       'hcc_utf8.csv')
+
+test_list <- list("跚愧稞鈾"="璞餐縷擺","台灣資料科學年會"="中央研究院人文社會科學館")
