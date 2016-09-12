@@ -50,7 +50,7 @@
     接下來是 script 測試
 
 - Class: script
-  Output: 在 script 中測試中文
+  Output: 在 script 中測試中文, 請在完成修改後存擋, 並輸入 submit() 繳交答案
   AnswerTests: test_HW_test()
   Hint: hint
   Script: test_HW.R
