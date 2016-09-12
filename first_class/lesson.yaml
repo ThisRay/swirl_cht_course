@@ -22,10 +22,10 @@
   Hint: 輸入`c('孀','髏','躡','黠')`
 
 - Class: cmd_question
-  Output: 請輸入` list('功','蓋'='穀稞','閱'=123) `, 測試中文在 list 中的情況
-  CorrectAnswer: list('功','蓋'='穀稞','閱'=123)
-  AnswerTests: omnitest('list(\'功\',\'蓋\'=\'穀稞\',\'閱\'=123)')
-  Hint: 輸入`list('功','蓋'='穀稞','閱'=123)`
+  Output: 請輸入` list('功','蓋'='穀','閱'=123) `, 測試中文在 list 中的情況
+  CorrectAnswer: list('功','蓋'='穀','閱'=123)
+  AnswerTests: omnitest('list(\'功\',\'蓋\'=\'穀\',\'閱\'=123)')
+  Hint: 輸入`list('功','蓋'='穀','閱'=123)`
 
 - Class: cmd_question
   Output: 請輸入` test_list `, 測試中文在內建變數中的情況
