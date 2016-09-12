@@ -14,6 +14,6 @@
 
 test_HW_test <- function(){
 	df_user <- get('df_test', globalenv())
-	ans <- data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾'))
-	isTRUE(df_user[1,1]==ans[1,1])
+
+	isTRUE(df_user[1,1]==iconv('\xb0\\','BIG5','UTF-8'))
 }

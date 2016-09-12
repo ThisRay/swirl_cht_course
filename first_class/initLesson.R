@@ -24,6 +24,16 @@ csvfile_path <- file.path(.get_course_path(),
                       'first_class',
                       'hcc_utf8.csv')
 
+test_list <- local({
+  a <- iconv('\xa5x\xc6W\xb8\xea\xaeƬ\xec\xbeǦ~\xb7|',"BIG5","UTF-8")
+  b <- iconv('\xa4\xa4\xa5\xa1\xac\xe3\xa8s\xb0|\xa4H\xa4\xe5\xaa\xc0\xb7|\xac\xec\xbe\xc7\xc0]',"BIG5","UTF-8")
+  c <- iconv('\xb6\\\xb7\\\xb8\\\xb9\\',"BIG5","UTF-8")
+  d <- iconv('\xbf\\\xc0\\\xc1\\\xc2\\',"BIG5","UTF-8")
+  list(a=b,c=d)
+})
+names(test_list) <- c(iconv('\xa5x\xc6W\xb8\xea\xaeƬ\xec\xbeǦ~\xb7|',"BIG5","UTF-8"), c <- iconv('\xb6\\\xb7\\\xb8\\\xb9\\',"BIG5","UTF-8"))
 
 
-test_list <- list("台灣資料科學年會"="中央研究院人文社會科學館","跚愧稞鈾"="璞餐縷擺")
+
+
+
