@@ -40,10 +40,10 @@
   Hint: 輸入`data.frame('珮'=c('豹','涂','罡'), '跚'=c('愧','稞','鈾'))`
 
 - Class: cmd_question
-  Output: 請輸入` read.csv(file=csvfile_path,fileEncoding='UTF-8') `, 測試中文 csv 讀取的情況
-  CorrectAnswer: read.csv(file=csvfile_path,fileEncoding='UTF-8')
-  AnswerTests: omnitest('read.csv(file=csvfile_path,fileEncoding=\'UTF-8\')')
-  Hint: 輸入`read.csv(file=csvfile_path,fileEncoding='UTF-8')`
+  Output: 請輸入` read.csv(file=csvfile_path, fileEncoding='UTF-8') `, 測試中文 csv 讀取的情況
+  CorrectAnswer: read.csv(file=csvfile_path, fileEncoding='UTF-8')
+  AnswerTests: omnitest('read.csv(file=csvfile_path, fileEncoding=\'UTF-8\')')
+  Hint: 輸入`read.csv(file=csvfile_path, fileEncoding='UTF-8')`
 
 - Class: text
   Output: |
