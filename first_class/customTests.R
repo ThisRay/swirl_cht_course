@@ -14,6 +14,5 @@
 
 test_HW_test <- function(){
 	df_user <- get('df_test', globalenv())
-
 	isTRUE(df_user[1,1]==iconv('\xb0\\','BIG5','UTF-8'))
 }
