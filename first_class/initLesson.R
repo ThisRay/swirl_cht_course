@@ -33,7 +33,6 @@ test_list <- local({
 })
 names(test_list) <- c(iconv("\xa5x\xc6W\xb8\xea\xaeƬ\xec\xbeǦ~\xb7|","BIG5","UTF-8"), c <- iconv("\xb6\\\xb7\\\xb8\\\xb9\\","BIG5","UTF-8"))
 
-#test_list <- list("台灣資料科學年會"="中央研究院人文社會科學館", "跚愧稞鈾"="璞餐縷擺")
 
 df_test <- data.frame(a=c(1,2,3),b=c(3,2,1))
 
