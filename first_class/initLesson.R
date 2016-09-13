@@ -31,7 +31,7 @@ test_list <- local({
   d <- iconv("\xbf\\\xc0\\\xc1\\\xc2\\","BIG5","UTF-8")
   list(a=b,c=d)
 })
-names(test_list) <- c(iconv("\xa5x\xc6W\xb8\xea\xaeƬ\xec\xbeǦ~\xb7|","BIG5","UTF-8"), c <- iconv("\xb6\\\xb7\\\xb8\\\xb9\\","BIG5","UTF-8"))
+names(test_list) <- c(iconv("\xa5x\xc6W\xb8\xea\xaeƬ\xec\xbeǦ~\xb7|","BIG5","UTF-8"), iconv("\xb6\\\xb7\\\xb8\\\xb9\\","BIG5","UTF-8"))
 
 
 df_test <- data.frame(a=c(1,2,3),b=c(3,2,1))
