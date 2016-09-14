@@ -1,0 +1,22 @@
+- Class: meta
+  Course: swirl_cht_course
+  Lesson: second_class
+  Author: ray test2
+  Type: Standard
+  Organization: your organization's name goes here
+  Version: 2.4.2
+
+- Class: video
+  Output: Would you like to watch a short video about ___?
+  VideoLink: http://address.of.video
+
+- Class: figure
+  Output: explain the figure here
+  Figure: sourcefile.R
+  FigureType: new
+
+- Class: text_question
+  Output: 請輸入中文 ` 許 `
+  CorrectAnswer: '許'
+  AnswerTests: omnitest(correctVal='許')
+  Hint: hint

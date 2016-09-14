@@ -11,7 +11,7 @@
 
 - Class: text_question
   Output: 請輸入中文 ` 許 `
-  CorrectAnswer: 許
+  CorrectAnswer: '許'
   AnswerTests: omnitest(correctVal='許')
   Hint: hint
 
